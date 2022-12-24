@@ -363,6 +363,21 @@ grid-area: header2;
 
 /* inicia reserva */
 
+.reservacontenedor{
+   height: auto;
+   display: grid ;
+   grid-template-columns: 25fr 25fr 25fr 25fr;
+   grid-template-rows: auto auto auto auto auto;
+   grid-template-areas: 
+
+    "header header header header"
+    "a3 a3 a3 a3"
+    "b3 b3 b3 b3"
+    "c3 c3 c3 c3"
+    "footer footer footer footer"
+    ;
+}
+
 .reservar_container{
    background-color: #F1C00C;
    display: flex;
@@ -370,14 +385,15 @@ grid-area: header2;
    justify-content:space-around;
    padding-top: 100px;
    padding-bottom: 100px;
+   grid-area: a3;
 }
 
-.reservaimg{
-   height: 400px;
-   width: auto;
-
+.dropdownreserv{
+   display: flex;
+   flex-direction: column;
+   justify-content: space-between;
+   column-gap: 50px;
 }
-
 .calendario_reserva{
    background-color: #F17B0D;
    display: flex;
@@ -385,6 +401,7 @@ grid-area: header2;
    justify-content:space-around;
    padding-top: 100px;
    padding-bottom: 100px;
+   grid-area: b3;
 
 }
 .dudas{
@@ -394,5 +411,14 @@ grid-area: header2;
    justify-content: space-around;
    padding-top: 100px;
    padding-bottom: 100px;
+   grid-area: c3;
+}
+.text_box_calendario{
+   display:flex;
+   flex-direction: column;
+}
+.botonenviar{
+   height: 120%;
+   width: 120%;
 }
 /* inicia internacional */
