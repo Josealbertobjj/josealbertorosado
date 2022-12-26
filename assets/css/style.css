@@ -422,3 +422,50 @@ grid-area: header2;
    width: 120%;
 }
 /* inicia internacional */
+
+.internacionalcontenedor{
+   height: auto;
+   display: grid ;
+   grid-template-columns: 25fr 25fr 25fr 25fr;
+   grid-template-rows: auto auto auto auto auto;
+   grid-template-areas: 
+
+    "header header header header"
+    "a4 a4 a4 a4"
+    "b4 b4 b4 b4"
+    "footer footer footer footer"
+    ;
+}
+
+.containerinter{
+   display: flex;
+   flex-direction:row;
+   justify-content: space-around;
+   grid-area: a4;
+   background-color: #F1C00C;
+}
+
+.imginternacional{
+   width: 400px;
+   height: 400px;
+}
+
+.imginternacional:hover{
+   transform: scale(1.1);
+   transition: .3s;
+   background-color: #faeee7;
+
+}
+
+.intercal{
+   display: flex;
+   flex-direction: row;
+   justify-content: space-around;
+   grid-area: b4;
+   background-color: #ff003c
+
+}
+
+.tarjetaint{
+   align-self: center;
+}
