@@ -1,0 +1,43 @@
+@use'_Variables' as c;
+
+.promocontenedor{
+    height: auto;
+    display: grid ;
+    grid-template-columns: 25fr 25fr 25fr 25fr;
+    grid-template-rows: auto auto auto auto auto;
+    grid-template-areas: 
+ 
+     "header header header header"
+     "a5 a5 a5 a5"
+     "b5 b5 b5 b5"
+     "c5 c5 c5 c5"
+     "footer footer footer footer"
+     ;
+ 
+ }
+.promosbox1{
+    grid-area: a5;
+    background-color: #F1C00C;
+}
+
+ .ultimaspromos{
+grid-area: b5;
+background-color: map-get(c.$colores, "Arriba" );
+display: flex;
+flex-direction: row;
+justify-content: space-around;
+
+}
+.suscribetebox{
+grid-area: c5;
+background-color: map-get(c.$colores, "Abajo" );
+display: flex;
+flex-direction: row;
+justify-content: space-around;
+
+.tarjetasuscribe{
+
+    width: 60%;
+    }
+}
+ 

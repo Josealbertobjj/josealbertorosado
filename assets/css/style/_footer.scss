@@ -1,7 +1,7 @@
-
+@use '_Variables' as c;
 
 footer{
-    background-color: #154B67;
+    background-color: map-get(c.$colores, "Mar" );
     display: flex;
     flex-direction: row;
     justify-content: space-between;

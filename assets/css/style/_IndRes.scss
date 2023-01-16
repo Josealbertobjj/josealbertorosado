@@ -1,3 +1,5 @@
+@use '_Variables' as c;
+
 .reservacontenedor{
     height: auto;
     display: grid ;
@@ -14,7 +16,7 @@
 }
  
 .reservar_container{
-    background-color: #F1C00C;
+    background-color: map-get(c.$colores, "Arriba" );
     display: flex;
     flex-direction:row;
     justify-content:space-around;
@@ -25,7 +27,7 @@
 
 
 .calendario_reserva{
-    background-color: #F17B0D;
+    background-color: map-get(c.$colores, "Medio" );
     display: flex;
     flex-direction:row;
     justify-content:space-around;
@@ -43,7 +45,7 @@
 }
 
 .dudas{
-    background-color: #ff003c;
+    background-color: map-get(c.$colores, "Abajo" );
     display: flex;
     flex-direction:row;
     justify-content: space-around;

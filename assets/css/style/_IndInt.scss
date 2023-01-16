@@ -1,3 +1,5 @@
+@use '_Variables' as c;
+
 .internacionalcontenedor {
     height: auto;
     display: grid;
@@ -17,7 +19,7 @@
     flex-direction: row;
     justify-content: space-around;
     grid-area: a4;
-    background-color: #F1C00C;
+    background-color: map-get(c.$colores, "Arriba" );
 
 
     
@@ -33,7 +35,7 @@
     &:hover {
         transform: scale(1.1);
         transition: .3s;
-        background-color: #faeee7;
+        background-color: map-get(c.$colores, "Sobre" );
         position: relative;
         
 
@@ -51,7 +53,7 @@
     flex-direction: row;
     justify-content:center;
     grid-area: b4;
-    background-color: #ff003c;
+    background-color: map-get(c.$colores, "Medio" );
     padding: 15%;
 
    

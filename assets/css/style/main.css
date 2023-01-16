@@ -89,7 +89,7 @@ body {
 }
 
 #Promociones_inicio {
-  background-color: #ff5900;
+  background-color: #F17B0D;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -159,7 +159,7 @@ body {
 }
 .destinos__box .tarjeta__dest {
   padding: 40px;
-  background-color: #f5861f;
+  background-color: #F17B0D;
   width: 400px;
   border-radius: 15px;
 }
@@ -177,7 +177,7 @@ body {
 }
 
 .slider__cancun {
-  background-color: #ff5900;
+  background-color: #F17B0D;
   display: flex;
   flex-direction: row;
   justify-content: space-around;
@@ -295,12 +295,44 @@ body {
   flex-direction: row;
   justify-content: center;
   grid-area: b4;
-  background-color: #ff003c;
+  background-color: #F17B0D;
   padding: 15%;
 }
 
 .tarjetaint {
   align-self: center;
+}
+
+.promocontenedor {
+  height: auto;
+  display: grid;
+  grid-template-columns: 25fr 25fr 25fr 25fr;
+  grid-template-rows: auto auto auto auto auto;
+  grid-template-areas: "header header header header" "a5 a5 a5 a5" "b5 b5 b5 b5" "c5 c5 c5 c5" "footer footer footer footer";
+}
+
+.promosbox1 {
+  grid-area: a5;
+  background-color: #F1C00C;
+}
+
+.ultimaspromos {
+  grid-area: b5;
+  background-color: #F1C00C;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.suscribetebox {
+  grid-area: c5;
+  background-color: #ff003c;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+.suscribetebox .tarjetasuscribe {
+  width: 60%;
 }
 
 @media only screen and (min-width: 1280px) {

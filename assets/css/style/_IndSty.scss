@@ -1,3 +1,5 @@
+@use '_Variables' as c;
+
 .indexcontainer{
    height: auto;
    display: grid ;
@@ -15,7 +17,7 @@
 }
 
 body{
-   background-color: #B8E5EA;
+   background-color: map-get(c.$colores, "Cielo" );
    
    
    
@@ -31,7 +33,7 @@ body{
 
 
 #beneficios__container {
-   background-color: #F1C00C ;
+   background-color: map-get(c.$colores, "Arriba" );
    width: 100%; 
    display: flex;
    flex-direction: column;
@@ -60,13 +62,13 @@ body{
 
 .tarjetaBen{
    padding: 20px;
-   background-color:#F17B0D;
+   background-color:map-get(c.$colores, "Medio" );
    display: none;
    
    &:hover{
       transform: scale(1.1);
       transition: .3s;
-      background-color: #faeee7;
+      background-color: map-get(c.$colores, "Sobre" );
    }
   
    
@@ -84,7 +86,7 @@ body{
 }
 
 #Promociones_inicio{
-   background-color: #ff5900 ;
+   background-color: map-get(c.$colores, "Medio" );
    display: flex;
    flex-direction:column;
    align-items: center;
@@ -102,13 +104,13 @@ body{
 
 #promoin1{
    padding: 20px;
-   background-color:#F1C00C;
+   background-color:map-get(c.$colores, "Arriba" );
    display: none;
 
    &:hover{
    transform: scale(1.1);
    transition: .3s;
-   background-color: #faeee7;
+   background-color: map-get(c.$colores, "Sobre" );
 
    }
 
@@ -125,7 +127,7 @@ body{
 }
 .videobox{
    padding: 20px;
-   background-color:#B8E5EA ;
+   background-color: map-get(c.$colores, "Cielo" );
    
 }
 
