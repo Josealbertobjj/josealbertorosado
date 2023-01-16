@@ -258,7 +258,7 @@ footer{
    grid-template-rows: auto auto auto auto auto;
    grid-template-areas: 
 
-    "header2 header2 header2 header2"
+    "header header header header"
     "a2 a2 a2 a2"
     "b2 b2 b2 b2"
     "c2 c2 c2 c2"
@@ -267,9 +267,7 @@ footer{
     ;
 
 }
-.headerhoteles{
-grid-area: header2;
-}
+
 
 .destinos__principales{
    display: none;

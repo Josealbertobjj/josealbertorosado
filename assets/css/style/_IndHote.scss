@@ -1,0 +1,99 @@
+.hotelescontainer{
+    height: auto;
+    display: grid ;
+    grid-template-columns: 25fr 25fr 25fr 25fr;
+    grid-template-rows: auto auto auto auto auto;
+    grid-template-areas: 
+ 
+     "header header header header"
+     "a2 a2 a2 a2"
+     "b2 b2 b2 b2"
+     "c2 c2 c2 c2"
+     "d2 d2 d2 d2"
+     "footer footer footer footer"
+     ;
+ 
+}
+ 
+.destinos__principales{
+    display: none;
+    grid-area: a2 ;
+
+    .titleContainer{
+        align-self: center;
+       
+        .title{
+           font-size: larger;
+           text-align: center;
+        }
+     }
+}
+
+
+.destinos__box{
+    display: flex;
+    flex-direction: row;
+    justify-content:space-between;
+    padding: 40px;
+
+    .tarjeta__dest{
+        padding: 40px;
+        background-color:#f5861f;
+        width: 400px;;
+        border-radius: 15px; 
+        &:hover{
+        transform: scale(1.1);
+        transition: .3s;
+        background-color: #faeee7;
+        }
+        
+        .imgdest{
+            height: 300px;
+            width: 300px;
+            
+            }
+    
+    } 
+    
+    .textodest{
+        font-size:medium
+        }
+}
+ 
+
+
+
+
+.slider__cancun{
+background-color: #ff5900;
+display: flex;
+flex-direction:row;
+justify-content: space-around;
+padding-top: 100px;
+padding-bottom: 100px;
+grid-area: b2 ;
+}
+
+
+
+.slider__tulum{
+background-color: #B8E5EA;
+display: flex;
+flex-direction:row;
+justify-content: space-around;
+padding-top: 100px;
+padding-bottom: 100px;
+grid-area: c2;
+
+}
+
+.slider__playa{
+background-color: #ff003c;
+display: flex;
+flex-direction:row;
+justify-content: space-around;
+padding-top: 100px;
+padding-bottom: 100px;
+grid-area: d2;
+
+}

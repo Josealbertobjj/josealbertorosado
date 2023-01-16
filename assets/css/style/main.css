@@ -1,0 +1,366 @@
+header {
+  grid-area: header;
+}
+
+#main_title {
+  background: linear-gradient(#B8E5EA 0%, #B8E5EA 95%, #154B67 100%);
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.logo {
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+}
+
+footer {
+  background-color: #154B67;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  grid-area: footer;
+}
+
+.Instagram {
+  height: 50px;
+  width: 50px;
+}
+
+.logo {
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+}
+
+.indexcontainer {
+  height: auto;
+  display: grid;
+  grid-template-columns: 25fr 25fr 25fr 25fr;
+  grid-template-rows: auto auto auto auto auto;
+  grid-template-areas: "header header header header" "a a a a" "b b b b" "c c c c" "footer footer footer footer";
+}
+
+body {
+  background-color: #B8E5EA;
+}
+
+#beneficios__container {
+  background-color: #F1C00C;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  padding-top: 100px;
+  padding-bottom: 100px;
+  grid-area: a;
+}
+#beneficios__container .titleContainer {
+  align-self: center;
+}
+#beneficios__container .titleContainer .title {
+  font-size: larger;
+  text-align: center;
+}
+#beneficios__container #tarjetasBox {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.tarjetaBen {
+  padding: 20px;
+  background-color: #F17B0D;
+  display: none;
+}
+.tarjetaBen:hover {
+  transform: scale(1.1);
+  transition: 0.3s;
+  background-color: #faeee7;
+}
+
+.textoBen {
+  font-size: medium;
+  text-align: center;
+}
+
+.slidercel {
+  display: block;
+}
+
+#Promociones_inicio {
+  background-color: #ff5900;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  grid-area: b;
+  padding-top: 20%;
+  padding-bottom: 20%;
+}
+#Promociones_inicio #carouselpromo {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+}
+
+#promoin1 {
+  padding: 20px;
+  background-color: #F1C00C;
+  display: none;
+}
+#promoin1:hover {
+  transform: scale(1.1);
+  transition: 0.3s;
+  background-color: #faeee7;
+}
+
+.imgtarj {
+  height: 400px;
+  width: auto;
+}
+
+#video_container_slide {
+  display: none;
+}
+
+.videobox {
+  padding: 20px;
+  background-color: #B8E5EA;
+}
+
+.hotelescontainer {
+  height: auto;
+  display: grid;
+  grid-template-columns: 25fr 25fr 25fr 25fr;
+  grid-template-rows: auto auto auto auto auto;
+  grid-template-areas: "header header header header" "a2 a2 a2 a2" "b2 b2 b2 b2" "c2 c2 c2 c2" "d2 d2 d2 d2" "footer footer footer footer";
+}
+
+.destinos__principales {
+  display: none;
+  grid-area: a2;
+}
+.destinos__principales .titleContainer {
+  align-self: center;
+}
+.destinos__principales .titleContainer .title {
+  font-size: larger;
+  text-align: center;
+}
+
+.destinos__box {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 40px;
+}
+.destinos__box .tarjeta__dest {
+  padding: 40px;
+  background-color: #f5861f;
+  width: 400px;
+  border-radius: 15px;
+}
+.destinos__box .tarjeta__dest:hover {
+  transform: scale(1.1);
+  transition: 0.3s;
+  background-color: #faeee7;
+}
+.destinos__box .tarjeta__dest .imgdest {
+  height: 300px;
+  width: 300px;
+}
+.destinos__box .textodest {
+  font-size: medium;
+}
+
+.slider__cancun {
+  background-color: #ff5900;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  padding-top: 100px;
+  padding-bottom: 100px;
+  grid-area: b2;
+}
+
+.slider__tulum {
+  background-color: #B8E5EA;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  padding-top: 100px;
+  padding-bottom: 100px;
+  grid-area: c2;
+}
+
+.slider__playa {
+  background-color: #ff003c;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  padding-top: 100px;
+  padding-bottom: 100px;
+  grid-area: d2;
+}
+
+.reservacontenedor {
+  height: auto;
+  display: grid;
+  grid-template-columns: 25fr 25fr 25fr 25fr;
+  grid-template-rows: auto auto auto auto auto;
+  grid-template-areas: "header header header header" "a3 a3 a3 a3" "b3 b3 b3 b3" "c3 c3 c3 c3" "footer footer footer footer";
+}
+
+.reservar_container {
+  background-color: #F1C00C;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  padding-top: 100px;
+  padding-bottom: 100px;
+  grid-area: a3;
+}
+
+.calendario_reserva {
+  background-color: #F17B0D;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  padding-top: 100px;
+  padding-bottom: 100px;
+  grid-area: b3;
+}
+.calendario_reserva .dropdownreserv {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  -moz-column-gap: 50px;
+       column-gap: 50px;
+}
+
+.dudas {
+  background-color: #ff003c;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  padding-top: 100px;
+  padding-bottom: 100px;
+  grid-area: c3;
+}
+.dudas .text_box_calendario {
+  display: flex;
+  flex-direction: column;
+}
+.dudas .text_box_calendario .botonenviar {
+  height: 120%;
+  width: 120%;
+}
+
+.internacionalcontenedor {
+  height: auto;
+  display: grid;
+  grid-template-columns: 25fr 25fr 25fr 25fr;
+  grid-template-rows: auto auto auto auto auto;
+  grid-template-areas: "header header header header" "a4 a4 a4 a4" "b4 b4 b4 b4" "footer footer footer footer";
+}
+
+.containerinter {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  grid-area: a4;
+  background-color: #F1C00C;
+}
+
+.imginternacional, .CalInter, .imginternacional2 {
+  width: 400px;
+  height: 400px;
+}
+.imginternacional:hover, .CalInter:hover, .imginternacional2:hover {
+  transform: scale(1.1);
+  transition: 0.3s;
+  background-color: #faeee7;
+  position: relative;
+}
+
+.imginternacional2 {
+  display: none;
+}
+
+.intercal {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  grid-area: b4;
+  background-color: #ff003c;
+  padding: 15%;
+}
+
+.tarjetaint {
+  align-self: center;
+}
+
+@media only screen and (min-width: 1280px) {
+  .logo {
+    height: 150px;
+    width: 150px;
+    border-radius: 50%;
+  }
+  #main_title {
+    background: linear-gradient(#B8E5EA 0%, #B8E5EA 95%, #154B67 100%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .tarjetaBen {
+    display: inline;
+  }
+  .slidercel {
+    display: none;
+  }
+  #carouselpromo {
+    display: none;
+  }
+  #promoin1 {
+    display: inline;
+  }
+  #Promociones_inicio {
+    background-color: #ff5900;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding-top: 100px;
+    padding-bottom: 100px;
+    grid-area: b;
+  }
+  #video_container_slide {
+    display: flex;
+    flex-direction: row;
+    background-color: #ff003c;
+    justify-content: space-around;
+    padding-top: 100px;
+    padding-bottom: 100px;
+    grid-area: c;
+  }
+  .Instagram {
+    height: 150px;
+    width: 150px;
+  }
+  .destinos__principales {
+    background-color: #F1C00C;
+    display: flex;
+    flex-direction: column;
+    padding-top: 100px;
+    padding-bottom: 100px;
+    grid-area: a2;
+  }
+  .imginternacional2 {
+    display: inline;
+  }
+  .intercal {
+    padding: 10%;
+  }
+}/*# sourceMappingURL=main.css.map */

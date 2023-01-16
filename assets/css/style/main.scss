@@ -1,0 +1,82 @@
+
+@use '_header';
+@use '_footer';
+@use '_IndSty';
+@use '_IndHote';
+@use '_IndRes';
+@use '_IndInt';
+
+@media only screen and (min-width:1280px){
+   .logo{
+      height: 150px;
+      width: 150px;
+      border-radius: 50%;
+   }
+ 
+   #main_title{
+      background:linear-gradient(#B8E5EA 0%,#B8E5EA 95%,#154B67 100%) ;
+      display: flex;
+      flex-direction:column;
+      align-items: center;
+   }
+   .tarjetaBen{
+      display: inline;
+   }
+   .slidercel{
+      display: none;
+   }
+   
+   #carouselpromo{
+      display: none;
+   }
+ 
+   #promoin1{
+    display: inline;
+   }
+
+   #Promociones_inicio{
+    background-color: #ff5900 ;
+    display: flex;
+    flex-direction:row;
+    justify-content: space-around;
+    padding-top: 100px;
+    padding-bottom: 100px;
+    grid-area: b ;
+ 
+   }
+
+   #video_container_slide{
+   display: flex;
+   flex-direction:row;
+   background-color: #ff003c ;
+   justify-content: space-around;
+   padding-top: 100px;
+   padding-bottom: 100px;
+   grid-area: c;
+   }
+ 
+   .Instagram{
+    height: 150px;
+    width: 150px;
+   }
+ 
+   .destinos__principales{
+      background-color: #F1C00C;
+      display: flex;
+      flex-direction: column;
+      padding-top: 100px;
+      padding-bottom: 100px;
+      grid-area: a2 ;
+     
+   }
+
+   .imginternacional2 {
+      display: inline;
+   }
+
+   .intercal {
+      padding: 10%;
+   }
+}
+
+
