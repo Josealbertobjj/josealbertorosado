@@ -15,10 +15,7 @@
      ;
  
  }
-.promosbox1{
-    grid-area: a5;
-    background-color: #F1C00C;
-}
+
 
  .ultimaspromos{
 grid-area: b5;
@@ -26,7 +23,14 @@ background-color: map-get(c.$colores, "Arriba" );
 display: flex;
 flex-direction: row;
 justify-content: space-around;
+ 
+}
+#carruselpromociones2 {
+    display: none;
+}
 
+#carruselpromociones3 {
+    display: none;
 }
 .suscribetebox{
 grid-area: c5;
@@ -40,4 +44,3 @@ justify-content: space-around;
     width: 60%;
     }
 }
- 

@@ -1,4 +1,4 @@
-@use '_Variables' as c;
+@use'_Variables' as c;
 
 
 header{
@@ -9,10 +9,11 @@ header{
 
 
 #main_title{
-    background:linear-gradient(#B8E5EA 0%,#B8E5EA 95%,#154B67 100%) ;
+    background-color: map-get(c.$colores, "Cielo" );
     display: flex;
     flex-direction:row;
     justify-content: space-between;
+    border: solid 10px #154B67;
     
     
    

@@ -25,27 +25,23 @@ body{
 
 
 
-
-
-
-
-
-
-
 #beneficios__container {
    background-color: map-get(c.$colores, "Arriba" );
    width: 100%; 
    display: flex;
    flex-direction: column;
-   padding-top: 100px;
+   padding-top: 25px;
    padding-bottom: 100px;
    grid-area: a ;
+   justify-content: space-between;
+   gap: 70px;
+   
 
    .titleContainer{
       align-self: center;
-     
+      
       .title{
-         font-size: larger;
+         font-size:xx-large;
          text-align: center;
       }
    }
@@ -64,20 +60,24 @@ body{
    padding: 20px;
    background-color:map-get(c.$colores, "Medio" );
    display: none;
+   width: 400px;
+   
    
    &:hover{
       transform: scale(1.1);
       transition: .3s;
       background-color: map-get(c.$colores, "Sobre" );
    }
-  
    
 }
 
-
+.boxtexto{
+   width: auto;
+   align-self: center;
+}
 .textoBen{
-   font-size: medium;
-   text-align: center;
+   font-size:larger ;
+   text-align: justify;
 
 }
 
@@ -106,6 +106,7 @@ body{
    padding: 20px;
    background-color:map-get(c.$colores, "Arriba" );
    display: none;
+   width: 400px;
 
    &:hover{
    transform: scale(1.1);
@@ -116,10 +117,16 @@ body{
 
 }
 
-.imgtarj{
-   height: 400px;
-   width: auto;
+.imgtarjbox{
+   align-self: center;
 }
+
+.imgtarj{
+   height: 300px;
+   width: auto;
+   
+}
+
 
 #video_container_slide{
    display: none;

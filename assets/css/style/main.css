@@ -3,10 +3,11 @@ header {
 }
 
 #main_title {
-  background: linear-gradient(#B8E5EA 0%, #B8E5EA 95%, #154B67 100%);
+  background-color: #B8E5EA;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  border: solid 10px #154B67;
 }
 
 .logo {
@@ -23,12 +24,12 @@ footer {
   grid-area: footer;
 }
 
-.Instagram {
+.Instagramft {
   height: 50px;
   width: 50px;
 }
 
-.logo {
+.logoft {
   height: 50px;
   width: 50px;
   border-radius: 50%;
@@ -51,15 +52,17 @@ body {
   width: 100%;
   display: flex;
   flex-direction: column;
-  padding-top: 100px;
+  padding-top: 25px;
   padding-bottom: 100px;
   grid-area: a;
+  justify-content: space-between;
+  gap: 70px;
 }
 #beneficios__container .titleContainer {
   align-self: center;
 }
 #beneficios__container .titleContainer .title {
-  font-size: larger;
+  font-size: xx-large;
   text-align: center;
 }
 #beneficios__container #tarjetasBox {
@@ -72,6 +75,7 @@ body {
   padding: 20px;
   background-color: #F17B0D;
   display: none;
+  width: 400px;
 }
 .tarjetaBen:hover {
   transform: scale(1.1);
@@ -79,9 +83,14 @@ body {
   background-color: #faeee7;
 }
 
+.boxtexto {
+  width: auto;
+  align-self: center;
+}
+
 .textoBen {
-  font-size: medium;
-  text-align: center;
+  font-size: larger;
+  text-align: justify;
 }
 
 .slidercel {
@@ -110,6 +119,7 @@ body {
   padding: 20px;
   background-color: #F1C00C;
   display: none;
+  width: 400px;
 }
 #promoin1:hover {
   transform: scale(1.1);
@@ -117,8 +127,12 @@ body {
   background-color: #faeee7;
 }
 
+.imgtarjbox {
+  align-self: center;
+}
+
 .imgtarj {
-  height: 400px;
+  height: 300px;
   width: auto;
 }
 
@@ -147,7 +161,7 @@ body {
   align-self: center;
 }
 .destinos__principales .titleContainer .title {
-  font-size: larger;
+  font-size: xx-large;
   text-align: center;
 }
 
@@ -174,6 +188,7 @@ body {
 }
 .destinos__box .textodest {
   font-size: medium;
+  text-align: justify;
 }
 
 .slider__cancun {
@@ -269,7 +284,7 @@ body {
 
 .containerinter {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   justify-content: space-around;
   grid-area: a4;
   background-color: #F1C00C;
@@ -311,17 +326,20 @@ body {
   grid-template-areas: "header header header header" "a5 a5 a5 a5" "b5 b5 b5 b5" "c5 c5 c5 c5" "footer footer footer footer";
 }
 
-.promosbox1 {
-  grid-area: a5;
-  background-color: #F1C00C;
-}
-
 .ultimaspromos {
   grid-area: b5;
   background-color: #F1C00C;
   display: flex;
   flex-direction: row;
   justify-content: space-around;
+}
+
+#carruselpromociones2 {
+  display: none;
+}
+
+#carruselpromociones3 {
+  display: none;
 }
 
 .suscribetebox {
@@ -342,13 +360,16 @@ body {
     border-radius: 50%;
   }
   #main_title {
-    background: linear-gradient(#B8E5EA 0%, #B8E5EA 95%, #154B67 100%);
+    background-color: #B8E5EA;
     display: flex;
     flex-direction: column;
     align-items: center;
+    border: solid 10px #154B67;
   }
   .tarjetaBen {
-    display: inline;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
   }
   .slidercel {
     display: none;
@@ -357,7 +378,9 @@ body {
     display: none;
   }
   #promoin1 {
-    display: inline;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
   }
   #Promociones_inicio {
     background-color: #ff5900;
@@ -377,10 +400,6 @@ body {
     padding-bottom: 100px;
     grid-area: c;
   }
-  .Instagram {
-    height: 150px;
-    width: 150px;
-  }
   .destinos__principales {
     background-color: #F1C00C;
     display: flex;
@@ -389,10 +408,32 @@ body {
     padding-bottom: 100px;
     grid-area: a2;
   }
+  .containerinter {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    grid-area: a4;
+    background-color: #F1C00C;
+  }
   .imginternacional2 {
     display: inline;
   }
   .intercal {
     padding: 10%;
+  }
+  .Instagramft {
+    height: 90px;
+    width: 90px;
+  }
+  .logoft {
+    height: 90px;
+    width: 90px;
+    border-radius: 50%;
+  }
+  #carruselpromociones2 {
+    display: inline;
+  }
+  #carruselpromociones3 {
+    display: inline;
   }
 }/*# sourceMappingURL=main.css.map */

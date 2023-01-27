@@ -16,16 +16,15 @@
 
 .containerinter {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: space-around;
     grid-area: a4;
     background-color: map-get(c.$colores, "Arriba" );
-
+}
 
     
 
 
-}
 
 .imginternacional {
     width: 400px;

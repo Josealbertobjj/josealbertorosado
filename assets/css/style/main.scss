@@ -16,14 +16,19 @@
    }
  
    #main_title{
-      background:linear-gradient(#B8E5EA 0%,#B8E5EA 95%,#154B67 100%) ;
+      background-color: #B8E5EA;
       display: flex;
       flex-direction:column;
       align-items: center;
+      border: solid 10px #154B67;
    }
    .tarjetaBen{
-      display: inline;
+      display: flex;
+      flex-direction: column;
+      gap: 30px;
+     
    }
+   
    .slidercel{
       display: none;
    }
@@ -33,7 +38,9 @@
    }
  
    #promoin1{
-    display: inline;
+    display: flex;
+    flex-direction: column;
+   gap: 30px;
    }
 
    #Promociones_inicio{
@@ -57,10 +64,7 @@
    grid-area: c;
    }
  
-   .Instagram{
-    height: 150px;
-    width: 150px;
-   }
+   
  
    .destinos__principales{
       background-color: #F1C00C;
@@ -71,7 +75,15 @@
       grid-area: a2 ;
      
    }
-
+   .containerinter {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-around;
+      grid-area: a4;
+      background-color: #F1C00C;
+  
+  
+  }
    .imginternacional2 {
       display: inline;
    }
@@ -79,6 +91,29 @@
    .intercal {
       padding: 10%;
    }
+
+   .Instagramft{
+      height: 90px;
+      width: 90px;
+  }
+  .logoft{
+      height: 90px;
+      width: 90px;
+      border-radius: 50%;
+     
+  }
+
+  #carruselpromociones2{
+   display: inline;
+  }
+
+  #carruselpromociones3{
+   display: inline;
+  }
+
+
 }
+
+
 
 
